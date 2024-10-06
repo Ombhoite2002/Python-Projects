@@ -1,4 +1,5 @@
 import ast
+import random
 
 name = input("Enter your name: ")
 print(f"Hello {name}, welcome to this quiz game.")
@@ -12,7 +13,7 @@ questions_dict = ast.literal_eval(content)
 
 questions = list(questions_dict.keys())
 score = 0
-
+random.shuffle(questions)
 for question in questions:
     print(question)
     my_answer = input("Enter your answer: ").lower()
