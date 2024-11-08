@@ -7,7 +7,7 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
-    description TEXT,
+    description TEXT NOT NULL,
     completed BOOLEAN DEFAULT FALSE
 )
 ''')
